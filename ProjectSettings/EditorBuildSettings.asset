@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/MouseMovement.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: b407883970d103644badcba84d6b5e23
+  - enabled: 1
+    path: Assets/Scenes/ClickPrecision.unity
+    guid: 1f060fb475c179f4d99c657bb37af14e
+  - enabled: 1
+    path: Assets/Scenes/Motores.unity
+    guid: 24266ce3c65c08e40816e5d01b204306
+  - enabled: 1
+    path: Assets/Scenes/TiroBlanco.unity
+    guid: 300309f9e5793d54085082e1058d162e
+  m_configObjects: {}

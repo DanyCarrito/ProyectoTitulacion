@@ -9,6 +9,7 @@ TagManager:
   - 'Mouse '
   - Score
   - Triangle
+  - Score 1
   layers:
   - Default
   - TransparentFX

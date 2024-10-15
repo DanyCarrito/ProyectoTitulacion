@@ -18,7 +18,7 @@ public class TriangleMovement : MonoBehaviour
 
     private void Update()
     {
-        //timerRespawn +
+        timerRespawn += Time.deltaTime;
     }
 
     void FixedUpdate()
@@ -26,6 +26,7 @@ public class TriangleMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             rb.AddForce(Vector3.up * force, ForceMode2D.Impulse);
+            //if(timerRespawn <)
         }
     } 
 }

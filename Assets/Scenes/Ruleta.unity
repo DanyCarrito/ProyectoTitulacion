@@ -571,9 +571,21 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 323354961812190129, guid: c2b0b53eda9278c40860f05f0ef32e93, type: 3}
+      propertyPath: objectPool
+      value: 
+      objectReference: {fileID: 1778458554}
+    - target: {fileID: 323354961812190129, guid: c2b0b53eda9278c40860f05f0ef32e93, type: 3}
+      propertyPath: timeToRespawn
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 323354961812190129, guid: c2b0b53eda9278c40860f05f0ef32e93, type: 3}
+      propertyPath: spawnPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 3173782842624634156, guid: c2b0b53eda9278c40860f05f0ef32e93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0004
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3173782842624634156, guid: c2b0b53eda9278c40860f05f0ef32e93, type: 3}
       propertyPath: m_LocalPosition.y

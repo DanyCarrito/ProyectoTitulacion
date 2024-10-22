@@ -8,12 +8,12 @@ public class DetectCollisions : MonoBehaviour
 {
     public GameObject obstacle;
 
-    Timer timerScpt;
+    public Timer timerScpt;
 
     // Start is called before the first frame update
     void Start()
     {
-        timerScpt = GetComponent<Timer>();
+       // timerScpt = GetComponent<Timer>();
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class DetectCollisions : MonoBehaviour
         if (distance <= myRadius)
         {
             Debug.Log("Obstaculo");
-            //timerScpt.TimePenalty();
+            timerScpt.TimePenalty();
         }
     }
 

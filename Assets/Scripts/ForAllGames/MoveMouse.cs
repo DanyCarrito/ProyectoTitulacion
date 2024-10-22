@@ -19,7 +19,7 @@ public class MoveMouse : MonoBehaviour
     {
 
         transform.position = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
-        
+        //pos = N(posDes - posActual) sumarlo para ir lenro 
         
     }
 }

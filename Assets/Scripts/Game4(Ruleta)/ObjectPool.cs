@@ -13,12 +13,12 @@ public class ObjectPool : MonoBehaviour
     {
         pool = new List<GameObject>();
 
-        for (int i = 0; i < poolSize; i++)
-        {
-            GameObject obj = Instantiate(prefab);
-            obj.SetActive(false); 
-            pool.Add(obj); 
-        }
+        //for (int i = 0; i < poolSize; i++)
+        //{
+        //    GameObject obj = Instantiate(prefab);
+        //    obj.SetActive(false); 
+        //    pool.Add(obj); 
+        //}
     }
 
     public GameObject GetPooledObject()

@@ -8,12 +8,13 @@ public class TriangleMovement : MonoBehaviour
 {
     public float speed;
     public float force = 10f;
-    public float timeToRespawn;
-    public Vector2 spawnPosition;
+    
 
-    private float timer;
+    public bool isActive;
+
+
     private Rigidbody2D rb;
-    public ObjectPool objectPool;
+    
 
     void Start()
     {
@@ -22,26 +23,17 @@ public class TriangleMovement : MonoBehaviour
 
     private void Update()
     {
-        timer += Time.deltaTime;
+
     }
 
     void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (isActive)
         {
             rb.AddForce(Vector3.up * force, ForceMode2D.Impulse);
 
-            if (timer < timeToRespawn)
-            {
-                timer = 0;
-                GameObject pooledObject = objectPool.GetPooledObject();
 
-                if (pooledObject != null)
-                {
-                    pooledObject.transform.position = spawnPosition;
-                    pooledObject.SetActive(true); 
-                }
-            }
         }
     }
+    
 }

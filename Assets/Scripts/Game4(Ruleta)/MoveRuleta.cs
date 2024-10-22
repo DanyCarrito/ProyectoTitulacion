@@ -16,6 +16,7 @@ public class MoveRuleta : MonoBehaviour
         if (collision.gameObject.CompareTag("Triangle"))
         {
             collision.transform.SetParent(transform);
+            collision.gameObject.GetComponent<TriangleMovement>().isActive = false;
         }
     }
 }

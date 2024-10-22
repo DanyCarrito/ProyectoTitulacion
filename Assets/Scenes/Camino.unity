@@ -630,6 +630,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4561973313292341828, guid: b87e10737a3463a4ba11e3fd57176ae9, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561973313292341828, guid: b87e10737a3463a4ba11e3fd57176ae9, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561973313292341828, guid: b87e10737a3463a4ba11e3fd57176ae9, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1048,6 +1060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 2266246085154155288, guid: b87e10737a3463a4ba11e3fd57176ae9, type: 3}
+  timerScpt: {fileID: 911717713}
 --- !u!114 &1467432972
 MonoBehaviour:
   m_ObjectHideFlags: 0

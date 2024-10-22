@@ -10,6 +10,8 @@ TagManager:
   - Score
   - Triangle
   - Score 1
+  - Enemy
+  - Goal
   layers:
   - Default
   - TransparentFX

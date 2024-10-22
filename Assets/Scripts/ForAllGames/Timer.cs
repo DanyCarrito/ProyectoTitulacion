@@ -27,7 +27,13 @@ public class Timer : MonoBehaviour
 
         if (timer <= minTime)
         {
-            //terminar juego 
+            Time.timeScale = 0f;
         }
+    }
+
+    public void TimePenalty()
+    {
+        Debug.Log("penalty");
+        //timer--;
     }
 }

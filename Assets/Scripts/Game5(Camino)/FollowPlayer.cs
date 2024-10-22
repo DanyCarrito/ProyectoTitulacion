@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    public Transform target; // El objeto a seguir
-    public float speed; // Velocidad de seguimiento
+    public Transform target; 
+    public float speed; 
 
     void Update()
     {

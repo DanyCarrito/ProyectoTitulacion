@@ -770,7 +770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minTime: 0
   timerText: {fileID: 302084012}
-  timer: 6
+  timer: 30
 --- !u!4 &911717714
 Transform:
   m_ObjectHideFlags: 0
@@ -1040,6 +1040,7 @@ GameObject:
   - component: {fileID: 1467432972}
   - component: {fileID: 1467432971}
   - component: {fileID: 1467432975}
+  - component: {fileID: 1467432976}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -1073,6 +1074,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c670234c910e3041beb148289d598ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
+  rb: {fileID: 1467432976}
 --- !u!212 &1467432973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1175,6 +1178,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!50 &1467432976
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467432970}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &3870356373443500681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1229,6 +1259,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2931422030110758848, guid: b87e10737a3463a4ba11e3fd57176ae9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561973313292341828, guid: b87e10737a3463a4ba11e3fd57176ae9, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561973313292341828, guid: b87e10737a3463a4ba11e3fd57176ae9, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561973313292341828, guid: b87e10737a3463a4ba11e3fd57176ae9, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

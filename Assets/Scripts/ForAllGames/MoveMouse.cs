@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class MoveMouse : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class MoveMouse : MonoBehaviour
 
     public float speed;
     public Rigidbody2D rb;
+
+    
 
    // public Transform posTarget; // Asigna el objeto objetivo desde el inspector
  //   private Vector3 posActual;
@@ -31,11 +34,25 @@ public class MoveMouse : MonoBehaviour
 
         mousePos.z = 0;
 
+        Vector2 resta = (mousePos - transform.position);
+        Vector2 desireV = (mousePos - transform.position).normalized;
 
-        Vector3 direction = (mousePos - transform.position).normalized;
-        Vector2 direction2d = new Vector2(direction.x, direction.y);
 
-        rb.velocity += direction2d * Time.deltaTime * speed;
+        Vector2 sv = new Vector2(-(transform.position.x + rb.velocity.x) + desireV.x, -(transform.position.y + rb.velocity.y) + desireV.y);
+
+       // Vector2 direction2d = new Vector2(direction.x, direction.y); 
+
+        if (resta.magnitude < (desireV * speed).magnitude)
+        {
+            rb.AddForce(resta);
+
+        }
+        else
+        {
+            rb.AddForce(( sv * speed));
+           // rb.velocity += direction2d * Time.deltaTime * speed;
+        }
+
 
     }
 }

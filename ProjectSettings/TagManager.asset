@@ -12,6 +12,7 @@ TagManager:
   - Score 1
   - Enemy
   - Goal
+  - Line
   layers:
   - Default
   - TransparentFX

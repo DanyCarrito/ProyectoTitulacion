@@ -6,9 +6,9 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class Timer : MonoBehaviour
 {
-    public float minTime;
-    public TextMeshProUGUI timerText;
+    float minTime = 0f;
 
+    public TextMeshProUGUI timerText;
     public float timer;
 
     // Start is called before the first frame update

@@ -7,18 +7,16 @@ public class MovementHazzard : MonoBehaviour
 {
     public float speed = 5f;
     public float limitX;
-    private ClickPrecision clickPrecision;
+    public ClickPrecision clickPrecision;
 
     private void Start()
     {
-
+        clickPrecision = GameObject.Find("Instantiate").GetComponent<ClickPrecision>();
     }
 
     void Update()
     {     
         transform.Translate(Vector2.right * speed * Time.deltaTime);
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

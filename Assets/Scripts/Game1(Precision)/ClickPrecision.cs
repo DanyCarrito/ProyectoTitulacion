@@ -17,25 +17,22 @@ public class ClickPrecision : MonoBehaviour
     {
         timer += Time.deltaTime;
         scoreText.text = score.ToString();
-        if (timer > 5)
-        {
-            Instantiate(hazzardPrefab, spawnPoint.position, spawnPoint.rotation);
 
-            GameManager.Instance.IncreaseScore(1);
-            if (score < 2)
-            {
-                AddScore();
-            }
-            else
+
+            
+
+            if(score > 3 )
             {
                 panelManager.win();
             }
             timer = 0;
-        }
+    
     }
 
     public void AddScore()
     {
+        Instantiate(hazzardPrefab, spawnPoint.position, spawnPoint.rotation);
         score++;
+        GameManager.Instance.IncreaseScore(1);
     }
 }

@@ -49,7 +49,7 @@ public class PanelManager : MonoBehaviour
     }
     public void GetRandomEasyGame()
     {
-        SceneManager.LoadScene(Random.Range(1, 1));
+        SceneManager.LoadScene(Random.Range(1, 7));
         GameManager.Instance.ChangeGameState(GameState.Precision);
     }
 

@@ -33,6 +33,10 @@ public class MovementMouse : MonoBehaviour
             }
             
         }
+        if( score >= 50 )
+        {
+            PanelManager.Instance.win();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)

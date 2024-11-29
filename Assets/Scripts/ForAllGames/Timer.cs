@@ -28,6 +28,7 @@ public class Timer : MonoBehaviour
         if (timer <= minTime)
         {
             Time.timeScale = 0f;
+            PanelManager.Instance.win();
         }
     }
 

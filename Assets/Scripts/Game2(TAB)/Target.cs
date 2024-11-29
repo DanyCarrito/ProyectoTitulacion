@@ -34,11 +34,6 @@ public class Target : MonoBehaviour
         {
             score++;
 
-            if(score > 2)
-            {
-                //victoryPanel.SetActive(true);
-            }
-
             Destroy(transform.parent.gameObject);
             SpawnObject();
             //GameManager.Instance.IncreaseScore(1);
@@ -47,8 +42,8 @@ public class Target : MonoBehaviour
         if (timer > timeMax)
         {
             timer = 0;
-            victoryPanel.SetActive(true);
-            Time.timeScale = 0f;
+            //victoryPanel.SetActive(true);
+            //Time.timeScale = 0f;
             //panelManager.win();
         }
     }

@@ -12,6 +12,13 @@ public class PanelManager : MonoBehaviour
     private int randomScene = -1;
     private int[] hardGames = { 2, 3 };
 
+    public static PanelManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(1))
@@ -33,7 +40,8 @@ public class PanelManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SetPanelsFalse();
-        chooserPanel.SetActive(true);
+        //chooserPanel.SetActive(true);
+        GetRandomEasyGame();
     }
 
     public void MainMenu()
@@ -49,7 +57,7 @@ public class PanelManager : MonoBehaviour
     }
     public void GetRandomEasyGame()
     {
-        SceneManager.LoadScene(Random.Range(1, 7));
+        SceneManager.LoadScene(Random.Range(1, 5));
         GameManager.Instance.ChangeGameState(GameState.Precision);
     }
 
@@ -84,7 +92,7 @@ public class PanelManager : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("ClickPrecision");
+        SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
         gamePanel.SetActive(true);
     }

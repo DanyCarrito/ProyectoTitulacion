@@ -59,7 +59,8 @@ public class DetectCollisions : MonoBehaviour
         if (collision.gameObject.CompareTag("Goal"))
         {
             Debug.Log("ganaste");
-            Time.timeScale = 0f;
+            //Time.timeScale = 0f;
+            PanelManager.Instance.win();
         }
     }
 }

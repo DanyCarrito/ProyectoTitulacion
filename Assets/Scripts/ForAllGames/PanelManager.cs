@@ -57,7 +57,7 @@ public class PanelManager : MonoBehaviour
     }
     public void GetRandomEasyGame()
     {
-        SceneManager.LoadScene(Random.Range(1, 5));
+        SceneManager.LoadScene(Random.Range(1, 7));
         GameManager.Instance.ChangeGameState(GameState.Precision);
     }
 
@@ -102,5 +102,10 @@ public class PanelManager : MonoBehaviour
         mainMenuPanel.SetActive(false);
         pausePanel.SetActive(false);
         gamePanel.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

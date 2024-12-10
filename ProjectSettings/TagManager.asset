@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - Goal
   - Line
+  - Roulette
   layers:
   - Default
   - TransparentFX

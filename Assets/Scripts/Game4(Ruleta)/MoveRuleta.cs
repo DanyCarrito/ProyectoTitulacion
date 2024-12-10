@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class MoveRuleta : MonoBehaviour
 {
-    public float rotationSpeed = 50f; 
+    public TextMeshProUGUI scoreText;
+    public float rotationSpeed = 50f;
 
+    private void Start()
+    {
+        scoreText.text = TriangleMovement.Instance.score.ToString();
+    }
     void Update()
     {
         transform.Rotate(Vector3.back, rotationSpeed * Time.deltaTime);

@@ -2395,10 +2395,6 @@ PrefabInstance:
       propertyPath: victoryPanel
       value: 
       objectReference: {fileID: 278010600}
-    - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: objectToSpawn
-      value: 
-      objectReference: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

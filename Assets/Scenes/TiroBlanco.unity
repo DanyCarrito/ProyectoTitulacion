@@ -838,18 +838,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 461911731}
     m_Modifications:
     - target: {fileID: 3442461337080876504, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3442461337080876504, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3442461337080876504, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3442461337080876504, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.756843
       objectReference: {fileID: 0}
@@ -893,18 +881,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: timeMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: victoryPanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: objectToSpawn
-      value: 
-      objectReference: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

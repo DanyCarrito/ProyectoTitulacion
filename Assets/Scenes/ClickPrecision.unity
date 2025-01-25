@@ -1629,6 +1629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hazzard
       objectReference: {fileID: 0}
+    - target: {fileID: 138191603436809230, guid: 9016fa4511b45d34aa0801fbd4ce08f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3351524554303455373, guid: 9016fa4511b45d34aa0801fbd4ce08f7, type: 3}
       propertyPath: clickPrecision
       value: 

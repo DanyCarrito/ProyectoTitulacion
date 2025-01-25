@@ -9,12 +9,13 @@ public class Jump : MonoBehaviour
     public float jumpForce; 
     public bool isGrounded = false; 
     private Rigidbody2D rb;
-
+    private Animator animator;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -33,6 +34,7 @@ public class Jump : MonoBehaviour
         Sequence s = DOTween.Sequence();
         s.Append(transform.DOScale(2, 1)).Append(transform.DOScale(1, 1));
         //s.Append(transform.DORotate(Vector3.right*100,200).SetLoops(2));
+        animator.SetBool("isJumping", true);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -41,6 +43,7 @@ public class Jump : MonoBehaviour
         {
 
             isGrounded = true;
+            animator.SetBool("isJumping", false);
         }
     }
 

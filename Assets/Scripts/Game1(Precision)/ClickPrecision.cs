@@ -11,6 +11,12 @@ public class ClickPrecision : MonoBehaviour
     public PanelManager panelManager;
     public float timer;
     public int score;
+    public static ClickPrecision Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Update is called once per frame
     void Update()

@@ -11,7 +11,7 @@ public class MovementHazzard : MonoBehaviour
 
     private void Start()
     {
-        clickPrecision = GameObject.Find("Instantiate").GetComponent<ClickPrecision>();
+        //clickPrecision = GameObject.Find("Instantiate").GetComponent<ClickPrecision>();
     }
 
     void Update()
@@ -23,7 +23,7 @@ public class MovementHazzard : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Score"))
         {
-            clickPrecision.AddScore();
+            ClickPrecision.Instance.AddScore();
         }
     }
 

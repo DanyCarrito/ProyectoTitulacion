@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &23622460
 Transform:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ Camera:
   m_GameObject: {fileID: 54087046}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.3764706, g: 0.4, b: 0.43529412, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1049,7 +1049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1281675556
 Transform:
   m_ObjectHideFlags: 0

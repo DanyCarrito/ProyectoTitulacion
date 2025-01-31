@@ -4,10 +4,14 @@ using UnityEngine.SceneManagement;
 public class PanelManager : MonoBehaviour
 {
     public GameObject mainMenuPanel;
+    public GameObject tutorialPanel;
     public GameObject pausePanel;
     public GameObject gamePanel;
     public GameObject chooserPanel;
     public GameObject winPanel;
+
+    public float timerTutorial;
+    public bool isTutorialOver;
     
     private int randomScene = -1;
     private int[] hardGames = { 2, 3 };
@@ -18,9 +22,21 @@ public class PanelManager : MonoBehaviour
     {
         Instance = this;
     }
+    private void Start()
+    {
+        tutorialPanel.SetActive(true);
+        isTutorialOver = false;
+    }
 
     private void Update()
     {
+        timerTutorial -= Time.deltaTime;
+        if (timerTutorial <= 0)
+        {
+            tutorialPanel.SetActive(false);
+            isTutorialOver = true;
+        }
+
         if (Input.GetMouseButtonDown(1))
         {
             PauseGame();

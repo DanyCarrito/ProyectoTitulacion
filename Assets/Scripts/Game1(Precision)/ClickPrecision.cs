@@ -17,15 +17,16 @@ public class ClickPrecision : MonoBehaviour
     {
         Instance = this;
     }
+    private void Start()
+    {
+        Instantiate(hazzardPrefab, spawnPoint.position, spawnPoint.rotation);
+    }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
         scoreText.text = score.ToString();
-
-
-            
 
             if(score > 3 )
             {

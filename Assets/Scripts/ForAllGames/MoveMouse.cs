@@ -30,35 +30,38 @@ public class MoveMouse : MonoBehaviour
 
         //transform.position = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
         //pos = N(posDes - posActual) sumarlo para ir lenro 
- 
-        Vector3 mousePos = Input.mousePosition;
-
-        mousePos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane));
-
-        mousePos.z = 0;
-
-        Vector2 resta = (mousePos - transform.position);
-
-        Vector2 desireV;
-
-
-        if (resta.magnitude > radius)
+        if (PanelManager.Instance.isTutorialOver)
         {
-            //truncate
-            //desireV = (mousePos - transform.position).normalized * speed;
-            desireV = (mousePos - transform.position);
+            Vector3 mousePos = Input.mousePosition;
+
+            mousePos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane));
+
+            mousePos.z = 0;
+
+            Vector2 resta = (mousePos - transform.position);
+
+            Vector2 desireV;
+
+
+            if (resta.magnitude > radius)
+            {
+                //truncate
+                //desireV = (mousePos - transform.position).normalized * speed;
+                desireV = (mousePos - transform.position);
+            }
+            else
+            {
+
+                desireV = Truncate(resta.normalized, speed);
+            }
+
+            Vector2 currentVel = new Vector2(rb.velocity.x, rb.velocity.y);
+            Vector2 SteeringVel = new Vector2(desireV.x - currentVel.x, desireV.y - currentVel.y);
+
+
+            rb.AddForce(SteeringVel);
         }
-        else
-        {
-            
-            desireV = Truncate(resta.normalized, speed);
-        }
 
-        Vector2 currentVel = new Vector2(rb.velocity.x, rb.velocity.y);
-        Vector2 SteeringVel = new Vector2(desireV.x - currentVel.x, desireV.y - currentVel.y);
-
-
-        rb.AddForce(SteeringVel);
     }
 
     Vector2 Truncate(Vector2 v2, float size )

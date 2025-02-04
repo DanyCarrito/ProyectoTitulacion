@@ -23,7 +23,11 @@ public class MovementMouse : MonoBehaviour
         int displayScore = Mathf.Max(0, Mathf.FloorToInt(score));
         scoreText.text = displayScore.ToString();
 
-        transform.position = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
+        if (PanelManager.Instance.isTutorialOver)
+        {
+            transform.position = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
+        }
+
         Debug.Log(score);
         if(!isColision )
         {
@@ -58,7 +62,7 @@ public class MovementMouse : MonoBehaviour
             Debug.Log("NOOO olisionando");
 
             Sequence s = DOTween.Sequence();
-            s.Append(Camera.main.DOShakePosition(.25f)).Append(Camera.main.transform.DOMove(new Vector3(0, 0 ,-10), .5f)) ;
+            //s.Append(Camera.main.DOShakePosition(.25f)).Append(Camera.main.transform.DOMove(new Vector3(0, 0 ,-10), .5f)) ;
             
             GetComponent<SpriteRenderer>().DOColor(Color.red, .25f);
         }

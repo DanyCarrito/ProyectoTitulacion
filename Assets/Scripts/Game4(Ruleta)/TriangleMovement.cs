@@ -26,11 +26,6 @@ public class TriangleMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
-    {
-
-    }
-
     void FixedUpdate()
     {
         if (isActive)

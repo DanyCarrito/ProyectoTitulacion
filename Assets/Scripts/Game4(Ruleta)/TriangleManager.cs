@@ -9,18 +9,12 @@ public class TriangleManager : MonoBehaviour
     private float timer;
 
     public Vector2 spawnPosition;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && PanelManager.Instance.isTutorialOver)
         {
             if (timer > timeToRespawn)
             {

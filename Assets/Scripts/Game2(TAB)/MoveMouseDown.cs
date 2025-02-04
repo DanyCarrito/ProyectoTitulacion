@@ -21,24 +21,28 @@ public class MoveMouseDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
-
-        if (transform.position.x >= rightLimit.x)
+        if (PanelManager.Instance.isTutorialOver)
         {
-            direction = Vector3.left;
-            MoveDown();
+            transform.Translate(direction * speed * Time.deltaTime);
+
+            if (transform.position.x >= rightLimit.x)
+            {
+                direction = Vector3.left;
+                MoveDown();
+            }
+
+            if (transform.position.x <= leftLimit.x)
+            {
+                direction = Vector3.right;
+                MoveDown();
+            }
+
+            if (transform.position.y <= finalPosition.y)
+            {
+                ResetToInitialPosition();
+            }
         }
 
-        if (transform.position.x <= leftLimit.x)
-        {
-            direction = Vector3.right;
-            MoveDown();
-        }
-
-        if (transform.position.y <= finalPosition.y)
-        {
-            ResetToInitialPosition();
-        }
 
     }
 

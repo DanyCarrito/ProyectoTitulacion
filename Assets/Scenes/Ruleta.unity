@@ -1435,7 +1435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPool: {fileID: 1778458554}
-  timeToRespawn: 3
+  timeToRespawn: 1
   spawnPosition: {x: 0, y: -3}
 --- !u!4 &1306454283
 Transform:

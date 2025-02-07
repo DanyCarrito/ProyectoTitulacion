@@ -13,6 +13,7 @@ public class PanelManager : MonoBehaviour
     public float timerTutorial;
     public bool isTutorialOver;
     
+    private float levelSpeed = 1;
     private int randomScene = -1;
     private int[] hardGames = { 2, 3 };
 
@@ -24,16 +25,26 @@ public class PanelManager : MonoBehaviour
     }
     private void Start()
     {
-        tutorialPanel.SetActive(true);
+        GameManager.Instance.AddLevelTime(1);
+        //Time.timeScale = levelSpeed;
+        if (tutorialPanel  != null) 
+        {
+            tutorialPanel.SetActive(true);
+        }
         isTutorialOver = false;
     }
 
     private void Update()
     {
+        print(Time.timeScale);
+
         timerTutorial -= Time.deltaTime;
         if (timerTutorial <= 0)
         {
-            tutorialPanel.SetActive(false);
+            if(tutorialPanel != null)
+            { 
+                tutorialPanel.SetActive(false);
+            }
             isTutorialOver = true;
         }
 
@@ -54,7 +65,7 @@ public class PanelManager : MonoBehaviour
     }
     public void StartGame()
     {
-        Time.timeScale = 1f;
+       
         SetPanelsFalse();
         //chooserPanel.SetActive(true);
         GetRandomEasyGame();
@@ -63,6 +74,7 @@ public class PanelManager : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        
     }
 
     public void win()
@@ -75,7 +87,9 @@ public class PanelManager : MonoBehaviour
     {
         int randomSceneIndex = Random.Range(1, 7);
         SceneManager.LoadScene(randomSceneIndex);
-        GameManager.Instance.ChangeGameState(GameState.Precision);
+        //levelSpeed += 5f;
+        //Time.timeScale += levelSpeed;
+       // GameManager.Instance.ChangeGameState(GameState.Precision);
     }
 
     public void GetRandomHardGame()
@@ -95,14 +109,14 @@ public class PanelManager : MonoBehaviour
 
     public void PauseGame()
     {
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         SetPanelsFalse();
         pausePanel.SetActive(true);
     }
 
     public void ResumeGame()
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SetPanelsFalse();
         gamePanel.SetActive(true);
     }
@@ -110,7 +124,7 @@ public class PanelManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene("MainMenu");
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         gamePanel.SetActive(true);
     }
 

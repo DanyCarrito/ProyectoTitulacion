@@ -490,7 +490,7 @@ PrefabInstance:
       objectReference: {fileID: 246444747}
     - target: {fileID: 5411831379769809035, guid: a416c03cdac29a748ab9bfbb82f0e814, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainMenu
+      value: StartGame
       objectReference: {fileID: 0}
     - target: {fileID: 5637898839479060688, guid: a416c03cdac29a748ab9bfbb82f0e814, type: 3}
       propertyPath: m_Name
@@ -2683,6 +2683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   score: 0
+  lvlSpeed: 0
 --- !u!4 &1914729284
 Transform:
   m_ObjectHideFlags: 0

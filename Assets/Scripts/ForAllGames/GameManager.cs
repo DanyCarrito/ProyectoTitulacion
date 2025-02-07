@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public float timer = 0;
     public int score = 0;
 
+    public float lvlSpeed;
+
     PanelManager panelManager;
 
     GameState gameState;
@@ -35,12 +37,15 @@ public class GameManager : MonoBehaviour
         gameState = GameState.None;
     }
 
-    private void Update()
+    public void AddLevelTime(float levelTime)
     {
-        if(gameState == GameState.Target)
+        lvlSpeed += levelTime;
+        Scene mainMenu = SceneManager.GetActiveScene();
+        if(mainMenu.name == "MainMenu")
         {
-
+            lvlSpeed = 1f;
         }
+        Time.timeScale = lvlSpeed;
     }
 
     public void ChangeGameState(GameState newState)

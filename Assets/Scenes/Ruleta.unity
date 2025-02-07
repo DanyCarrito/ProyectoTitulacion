@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1445077109}
-  timer: 20
+  timer: 3
 --- !u!4 &400476572
 Transform:
   m_ObjectHideFlags: 0
@@ -1704,6 +1704,14 @@ PrefabInstance:
     - target: {fileID: 2628507860659723818, guid: a416c03cdac29a748ab9bfbb82f0e814, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5411831379769809035, guid: a416c03cdac29a748ab9bfbb82f0e814, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386055527}
+    - target: {fileID: 5411831379769809035, guid: a416c03cdac29a748ab9bfbb82f0e814, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartGame
       objectReference: {fileID: 0}
     - target: {fileID: 5637898839479060688, guid: a416c03cdac29a748ab9bfbb82f0e814, type: 3}
       propertyPath: m_Name

@@ -21,7 +21,6 @@ public class Target : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 1.0f;
         originalScale = transform.localScale;
     }
 

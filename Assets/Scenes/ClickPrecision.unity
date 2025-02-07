@@ -1089,6 +1089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   score: 0
+  lvlSpeed: 0
 --- !u!4 &1272792658
 Transform:
   m_ObjectHideFlags: 0

@@ -9,11 +9,11 @@ public class PanelManager : MonoBehaviour
     public GameObject gamePanel;
     public GameObject chooserPanel;
     public GameObject winPanel;
+    public GameObject gameOverPanel;
 
     public float timerTutorial;
     public bool isTutorialOver;
     
-    private float levelSpeed = 1;
     private int randomScene = -1;
     private int[] hardGames = { 2, 3 };
 
@@ -25,7 +25,7 @@ public class PanelManager : MonoBehaviour
     }
     private void Start()
     {
-        GameManager.Instance.AddLevelTime(1);
+        GameManager.Instance.AddLevelTime(0.5f);
         //Time.timeScale = levelSpeed;
         if (tutorialPanel  != null) 
         {
@@ -83,8 +83,14 @@ public class PanelManager : MonoBehaviour
         //SetPanelsFalse();
         winPanel.SetActive(true);
     }
+    public void GameOver()
+    {
+        SetPanelsFalse();
+        gameOverPanel.SetActive(true);
+    }
     public void GetRandomEasyGame()
     {
+        
         int randomSceneIndex = Random.Range(1, 7);
         SceneManager.LoadScene(randomSceneIndex);
         //levelSpeed += 5f;

@@ -585,6 +585,7 @@ MonoBehaviour:
   gamePanel: {fileID: 111718724}
   chooserPanel: {fileID: 0}
   winPanel: {fileID: 435771526}
+  gameOverPanel: {fileID: 0}
   timerTutorial: 1
   isTutorialOver: 0
 --- !u!4 &386055528
@@ -1877,7 +1878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1726832237
 ParticleSystemRenderer:
   serializedVersion: 6

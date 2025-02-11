@@ -25,7 +25,7 @@ public class PanelManager : MonoBehaviour
     }
     private void Start()
     {
-        GameManager.Instance.AddLevelTime(0.5f);
+        //GameManager.Instance.AddLevelTime(0.3f);
         //Time.timeScale = levelSpeed;
         if (tutorialPanel  != null) 
         {
@@ -86,7 +86,12 @@ public class PanelManager : MonoBehaviour
     public void GameOver()
     {
         SetPanelsFalse();
-        gameOverPanel.SetActive(true);
+
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
+
     }
     public void GetRandomEasyGame()
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.VFX;
 
 public class Target : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Target : MonoBehaviour
     public float spawnRangeY = 4.5f;
     public GameObject objectToSpawn;
     public GameObject victoryPanel;
+    public VisualEffect particles;
     public Vector3 newScale = new Vector3(2.0f, 2.0f, 1.0f);
 
     private bool clickIsPressed = false;
@@ -33,8 +35,9 @@ public class Target : MonoBehaviour
         {
             score++;
 
-            Destroy(transform.parent.gameObject);
-            SpawnObject();
+            StartCoroutine(DieTarget());
+
+            
             //GameManager.Instance.IncreaseScore(1);
         }
 
@@ -47,6 +50,19 @@ public class Target : MonoBehaviour
         }
     }
 
+    IEnumerator DieTarget()
+    {
+        particles.gameObject.transform.position = transform.parent.position;
+        particles.SendEvent("OnPlay");
+        yield return new WaitForSeconds(.5f);
+
+        SpawnObject();
+        yield return new WaitForSeconds(.5f);
+
+        particles.SendEvent("Stop");
+        Destroy(transform.parent.gameObject);
+
+    }
     void SpawnObject()
     {
         float randomX = Random.Range(-spawnRangeX, spawnRangeX);

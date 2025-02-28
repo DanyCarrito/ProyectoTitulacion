@@ -113,9 +113,6 @@ public class PanelManager : MonoBehaviour
 
         SceneManager.LoadScene(randomScene); 
         Debug.Log("Escena difícil cargada: " + randomScene);
-
-
-
     }
 
     public void PauseGame()

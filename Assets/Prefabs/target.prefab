@@ -107,6 +107,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 3468780308005967044}
   victoryPanel: {fileID: 0}
   particles: {fileID: 7801619413769507098}
+  spriteRenderer: {fileID: 8150867497258807006}
   newScale: {x: 0.55, y: 0.55, z: 1}
 --- !u!58 &4493447316291591046
 CircleCollider2D:
@@ -140,9 +141,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.037879292, y: -0.0000005418604}
+  m_Offset: {x: 0.06664032, y: -0.45058906}
   serializedVersion: 2
-  m_Radius: 1.3106108
+  m_Radius: 2.9787471
 --- !u!50 &3798059866600648202
 Rigidbody2D:
   serializedVersion: 4
@@ -197,7 +198,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.85, y: 1.42, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 0.41696817, y: 0.41696817, z: 0.41696817}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3500498163591693030}
@@ -282,9 +283,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9021584204981236923}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.038577486, y: -0.15888827, z: -5.4791255}
-  m_LocalScale: {x: 2.8571427, y: 2.8571427, z: 2.8571427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3442461337080876504}

@@ -10,20 +10,21 @@ public class Target : MonoBehaviour
     public float timer;
     public float timeMax;
     public float score;
-    public float spawnRangeX = 10f; 
-    public float spawnRangeY = 4.5f;
-    public GameObject objectToSpawn;
+
     public GameObject victoryPanel;
     public VisualEffect particles;
+    public SpriteRenderer spriteRenderer;
     public Vector3 newScale = new Vector3(2.0f, 2.0f, 1.0f);
 
     private bool clickIsPressed = false;
     private Vector3 originalScale;
     private PanelManager panelManager;
+    public SpawnTgt spawnTgt;
 
     private void Start()
     {
         originalScale = transform.localScale;
+        
     }
 
     private void Update()
@@ -37,7 +38,7 @@ public class Target : MonoBehaviour
 
             StartCoroutine(DieTarget());
 
-            
+            //arreglar este error 
             //GameManager.Instance.IncreaseScore(1);
         }
 
@@ -54,29 +55,25 @@ public class Target : MonoBehaviour
     {
         particles.gameObject.transform.position = transform.parent.position;
         particles.SendEvent("OnPlay");
-        yield return new WaitForSeconds(.5f);
+        spriteRenderer.enabled = false;
+        spawnTgt.SpawnObject();
 
-        SpawnObject();
-        yield return new WaitForSeconds(.5f);
 
-        particles.SendEvent("Stop");
+        yield return new WaitForSeconds(5f);
+
+        //particles.SendEvent("Stop");
         Destroy(transform.parent.gameObject);
 
     }
-    void SpawnObject()
-    {
-        float randomX = Random.Range(-spawnRangeX, spawnRangeX);
-        float randomY = Random.Range(-spawnRangeY, spawnRangeY);
-        Vector2 randomPosition = new Vector2(randomX, randomY);
 
-        Instantiate(objectToSpawn, randomPosition, Quaternion.identity);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             transform.localScale = newScale;
+            clickIsPressed = true;
+            Debug.Log("esta dentro");
         }
     }
 
@@ -84,7 +81,7 @@ public class Target : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            clickIsPressed = true;
+            
         }
     }
 

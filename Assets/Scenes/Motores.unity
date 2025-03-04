@@ -296,6 +296,7 @@ MonoBehaviour:
   gamePanel: {fileID: 1497638207}
   chooserPanel: {fileID: 1497638207}
   winPanel: {fileID: 329934198}
+  gameOverPanel: {fileID: 0}
   timerTutorial: 1
   isTutorialOver: 0
 --- !u!4 &246444748
@@ -658,18 +659,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1111511875}
     m_Modifications:
     - target: {fileID: 3442461337080876504, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.41696817
-      objectReference: {fileID: 0}
-    - target: {fileID: 3442461337080876504, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.41696817
-      objectReference: {fileID: 0}
-    - target: {fileID: 3442461337080876504, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.41696817
-      objectReference: {fileID: 0}
-    - target: {fileID: 3442461337080876504, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2044.047
       objectReference: {fileID: 0}
@@ -717,10 +706,6 @@ PrefabInstance:
       propertyPath: victoryPanel
       value: 
       objectReference: {fileID: 278010600}
-    - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
-      propertyPath: objectToSpawn
-      value: 
-      objectReference: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1666,7 +1651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1168563881}
-  timer: 10
+  timer: 50
 --- !u!4 &1120763468
 Transform:
   m_ObjectHideFlags: 0

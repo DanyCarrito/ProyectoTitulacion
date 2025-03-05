@@ -24,7 +24,7 @@ public class Target : MonoBehaviour
     private void Start()
     {
         originalScale = transform.localScale;
-        
+        spawnTgt = FindObjectOfType<SpawnTgt>();
     }
 
     private void Update()

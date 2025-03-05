@@ -2435,6 +2435,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 178185056}
     m_Modifications:
+    - target: {fileID: 506788563993061336, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 506788563993061336, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4a87885f80107d840a28078e07947d6a, type: 3}
+    - target: {fileID: 506788563993061336, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 506788563993061336, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 506788563993061336, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9921569
+      objectReference: {fileID: 0}
     - target: {fileID: 1450234751509633791, guid: d989917acd86928469870c016ce305dd, type: 3}
       propertyPath: m_Name
       value: PanelMenu
@@ -2522,6 +2542,22 @@ PrefabInstance:
     - target: {fileID: 3887320007704344115, guid: d989917acd86928469870c016ce305dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052846896818089263, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052846896818089263, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052846896818089263, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052846896818089263, guid: d989917acd86928469870c016ce305dd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -291
       objectReference: {fileID: 0}
     - target: {fileID: 4220280324567362776, guid: d989917acd86928469870c016ce305dd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

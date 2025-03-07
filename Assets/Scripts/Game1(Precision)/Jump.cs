@@ -52,7 +52,7 @@ public class Jump : MonoBehaviour
         if (collision.gameObject.CompareTag("Hazzard"))
         {
             collision.gameObject.SetActive(false);
-            PanelManager.Instance.GameOver();
+            PanelManager.Instance.win();
             //Pierde
             //SceneManager.LoadScene("ClickPrecision");
         }

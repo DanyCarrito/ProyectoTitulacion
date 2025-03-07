@@ -25,7 +25,7 @@ public class PanelManager : MonoBehaviour
     }
     private void Start()
     {
-        //GameManager.Instance.AddLevelTime(0.3f);
+        GameManager.Instance.AddLevelTime(0.1f);
         //Time.timeScale = levelSpeed;
         if (tutorialPanel  != null) 
         {
@@ -50,7 +50,8 @@ public class PanelManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            PauseGame();
+            MainMenu();
+            //PauseGame();
         }
 
         if (randomScene == 2)

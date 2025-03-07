@@ -227,7 +227,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.3764706, g: 0.4, b: 0.43529412, a: 1}
+  m_BackGroundColor: {r: 0.40392157, g: 0.047058824, b: 0.57254905, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -544,6 +544,46 @@ PrefabInstance:
     - target: {fileID: 8240508486130911018, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
       propertyPath: m_Name
       value: TextureBackground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[0].b
+      value: 0.72199994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[0].g
+      value: 0.05934245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[0].r
+      value: 0.509356
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[1].b
+      value: 0.443
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[1].g
+      value: 0.036114134
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[1].r
+      value: 0.31298912
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[2].b
+      value: 0.65099996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[2].g
+      value: 0.093093
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[2].r
+      value: 0.4727338
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -985,7 +1025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &851257585
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1220,7 +1260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1245424273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1260,7 +1300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'JUMP!
+  m_text: 'SHOOT!
 
 '
   m_isRightToLeft: 0
@@ -1289,8 +1329,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 170
-  m_fontSizeBase: 170
+  m_fontSize: 145
+  m_fontSizeBase: 145
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -338,7 +338,7 @@ Camera:
   m_GameObject: {fileID: 275411790}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.43137258, g: 0.5764706, b: 0.9333334, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -2219,6 +2219,46 @@ PrefabInstance:
     - target: {fileID: 8240508486130911018, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
       propertyPath: m_Name
       value: TextureBackground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[0].b
+      value: 0.71199995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[0].g
+      value: 0.43976468
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[0].r
+      value: 0.32907563
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[1].b
+      value: 0.561
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[1].g
+      value: 0.30893567
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[1].r
+      value: 0.20644797
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[2].b
+      value: 0.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[2].g
+      value: 0.34018293
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695848220983273253, guid: df7b3ffa4cdb9124984f2236dfab726b, type: 3}
+      propertyPath: colors.Array.data[2].r
+      value: 0.190452
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -24,6 +24,7 @@ public class MoveRuleta : MonoBehaviour
         {
             collision.transform.SetParent(transform);
             collision.gameObject.GetComponent<TriangleMovement>().isActive = false;
+            collision.gameObject.GetComponent<TriangleMovement>().ConvertKinematic();
         }
     }
 }

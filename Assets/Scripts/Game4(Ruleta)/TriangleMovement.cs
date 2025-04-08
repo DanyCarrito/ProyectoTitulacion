@@ -44,4 +44,9 @@ public class TriangleMovement : MonoBehaviour
         }
     }
 
+    public void ConvertKinematic()
+    {
+        rb.isKinematic = true;
+    }
+
 }

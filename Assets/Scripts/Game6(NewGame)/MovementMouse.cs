@@ -36,6 +36,10 @@ public class MovementMouse : MonoBehaviour
                 score -= 0.01f;
                 GameManager.Instance.IncreaseScore(-0.1f);
             }
+            else if( score <= 0 ) 
+            {
+                score = 0;
+            }
             
         }
         if( score >= 50 )

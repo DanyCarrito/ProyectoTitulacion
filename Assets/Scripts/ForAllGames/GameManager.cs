@@ -81,7 +81,14 @@ public class GameManager : MonoBehaviour
     }
     public void IncreaseScore(float amount)
     {
+
         score += amount;
+        if(score <= 0)
+        {
+            score = 0;
+        }
+
+
         Debug.Log("Score: " + score);
     }
 }

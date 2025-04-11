@@ -20,7 +20,10 @@ public class Timer : MonoBehaviour
         if (timer <= minTime)
         {
             PanelManager.Instance.win();
-            player.SetActive(false);
+            if(player != null)
+            {
+                player.SetActive(false);
+            }
         }
     }
 

@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public float timer = 0;
-    public int score = 0;
+    public float score = 0;
 
     public float lvlSpeed;
 
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
         }
         Debug.Log(timer);
     }
-    public void IncreaseScore(int amount)
+    public void IncreaseScore(float amount)
     {
         score += amount;
         Debug.Log("Score: " + score);

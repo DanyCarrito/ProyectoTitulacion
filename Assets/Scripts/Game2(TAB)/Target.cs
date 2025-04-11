@@ -35,6 +35,7 @@ public class Target : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && clickIsPressed)
         {
             score++;
+            GameManager.Instance.IncreaseScore(1);
 
             StartCoroutine(DieTarget());
 
@@ -45,6 +46,7 @@ public class Target : MonoBehaviour
         if (timer > timeMax)
         {
             timer = 0;
+            //gameObject.SetActive(false);
             //victoryPanel.SetActive(true);
             //Time.timeScale = 0f;
             //panelManager.win();
@@ -56,6 +58,8 @@ public class Target : MonoBehaviour
         particles.gameObject.transform.position = transform.parent.position;
         particles.SendEvent("OnPlay");
         spriteRenderer.enabled = false;
+        yield return new WaitForSeconds(3f) ;
+        gameObject.transform .parent.gameObject.SetActive(false);
         spawnTgt.SpawnObject();
 
 

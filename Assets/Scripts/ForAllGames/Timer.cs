@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
 
     public TextMeshProUGUI timerText;
     public float timer;
-
+    public GameObject player;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +20,7 @@ public class Timer : MonoBehaviour
         if (timer <= minTime)
         {
             PanelManager.Instance.win();
+            player.SetActive(false);
         }
     }
 

@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PanelManager : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class PanelManager : MonoBehaviour
     public GameObject chooserPanel;
     public GameObject winPanel;
     public GameObject gameOverPanel;
+
+    public TMP_Text scoreText;
 
     public float timerTutorial;
     public bool isTutorialOver;
@@ -36,6 +40,12 @@ public class PanelManager : MonoBehaviour
 
     private void Update()
     {
+        if(scoreText != null)
+        {
+            int displayScore = Mathf.Max(0, Mathf.FloorToInt(GameManager.Instance.score));
+            scoreText.text = displayScore.ToString();
+        }
+
         print(Time.timeScale);
 
         timerTutorial -= Time.deltaTime;

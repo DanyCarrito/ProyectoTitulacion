@@ -626,6 +626,7 @@ MonoBehaviour:
   chooserPanel: {fileID: 0}
   winPanel: {fileID: 435771526}
   gameOverPanel: {fileID: 0}
+  scoreText: {fileID: 1440285882}
   timerTutorial: 1
   isTutorialOver: 0
 --- !u!4 &386055528
@@ -673,7 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1445077109}
-  timer: 10000
+  timer: 10
 --- !u!4 &400476572
 Transform:
   m_ObjectHideFlags: 0
@@ -1767,6 +1768,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a416c03cdac29a748ab9bfbb82f0e814, type: 3}
+--- !u!114 &1440285882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2779411913137203136, guid: a416c03cdac29a748ab9bfbb82f0e814, type: 3}
+  m_PrefabInstance: {fileID: 1440285881}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1445077108
 GameObject:
   m_ObjectHideFlags: 0

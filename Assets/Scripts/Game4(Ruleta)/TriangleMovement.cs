@@ -41,6 +41,7 @@ public class TriangleMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Roulette"))
         {
             score++;
+            GameManager.Instance.IncreaseScore(1);
         }
     }
 

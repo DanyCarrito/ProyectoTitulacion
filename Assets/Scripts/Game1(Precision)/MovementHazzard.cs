@@ -24,6 +24,7 @@ public class MovementHazzard : MonoBehaviour
         if (collision.gameObject.CompareTag("Score"))
         {
             ClickPrecision.Instance.AddScore();
+            GameManager.Instance.IncreaseScore(1);
         }
     }
 

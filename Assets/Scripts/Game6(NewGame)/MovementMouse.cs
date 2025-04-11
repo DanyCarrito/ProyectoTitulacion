@@ -34,6 +34,7 @@ public class MovementMouse : MonoBehaviour
             if( score > 0 )
             {
                 score -= 0.01f;
+                GameManager.Instance.IncreaseScore(-0.1f);
             }
             
         }
@@ -50,6 +51,7 @@ public class MovementMouse : MonoBehaviour
             Debug.Log("Colisionando");
             isColision = true;
             score += 0.1f;
+            GameManager.Instance.IncreaseScore(0.1f);
             GetComponent<SpriteRenderer>().DOColor(Color.green, .25f);
         }
     }

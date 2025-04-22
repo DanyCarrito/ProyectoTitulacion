@@ -14,10 +14,12 @@ public class PanelManager : MonoBehaviour
     public GameObject gameOverPanel;
 
     public TMP_Text scoreText;
+    public TMP_Text finalScoreText;
 
     public float timerTutorial;
     public bool isTutorialOver;
-    
+  
+
     private int randomScene = -1;
     private int[] hardGames = { 2, 3 };
 
@@ -44,6 +46,7 @@ public class PanelManager : MonoBehaviour
         {
             int displayScore = Mathf.Max(0, Mathf.FloorToInt(GameManager.Instance.score));
             scoreText.text = displayScore.ToString();
+            finalScoreText.text = displayScore.ToString();
         }
 
         print(Time.timeScale);
@@ -79,13 +82,21 @@ public class PanelManager : MonoBehaviour
        
         SetPanelsFalse();
         //chooserPanel.SetActive(true);
-        GetRandomEasyGame();
+        if(GameManager.Instance.lvlCounter <= 2)
+        {
+            GetRandomEasyGame();
+        }
+        else
+        {
+            GameOver();
+        }
+
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-        
+        GameManager.Instance.lvlCounter = 0;
     }
 
     public void win()
@@ -109,9 +120,8 @@ public class PanelManager : MonoBehaviour
         
         int randomSceneIndex = Random.Range(1, 7);
         SceneManager.LoadScene(randomSceneIndex);
-        //levelSpeed += 5f;
-        //Time.timeScale += levelSpeed;
-       // GameManager.Instance.ChangeGameState(GameState.Precision);
+        GameManager.Instance.lvlCounter++;
+
     }
 
     public void GetRandomHardGame()

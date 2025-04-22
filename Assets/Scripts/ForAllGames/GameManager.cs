@@ -14,9 +14,9 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    public int lvlCounter;
     public float timer = 0;
     public float score = 0;
-
     public float lvlSpeed;
 
     PanelManager panelManager;

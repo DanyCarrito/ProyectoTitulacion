@@ -13,8 +13,9 @@ public class TriangleMovement : MonoBehaviour
     public int score;
     public bool isActive;
     public static TriangleMovement Instance { get; private set; }
-
+    public bool touchingR = false;
     private Rigidbody2D rb;
+    private ObjectPool objectPool;
 
     private void Awake()
     {
@@ -24,6 +25,7 @@ public class TriangleMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        objectPool = GameObject.FindObjectOfType<ObjectPool>();
     }
 
     void FixedUpdate()
@@ -42,6 +44,15 @@ public class TriangleMovement : MonoBehaviour
         {
             score++;
             GameManager.Instance.IncreaseScore(1);
+            touchingR = true;
+        }
+
+        if (collision.gameObject.CompareTag("Triangle") && !touchingR)
+        {
+
+            GameManager.Instance.IncreaseScore(-1);
+            objectPool.RemovePooledObject(this.gameObject);
+            Destroy(gameObject);
         }
     }
 

@@ -43,9 +43,10 @@ public class Target : MonoBehaviour
             //GameManager.Instance.IncreaseScore(1);
         }
 
-        if (timer > timeMax)
+        if (Time.deltaTime == 0)
         {
             timer = 0;
+            clickIsPressed = false;
             //gameObject.SetActive(false);
             //victoryPanel.SetActive(true);
             //Time.timeScale = 0f;

@@ -11,7 +11,7 @@ public class MoveRuleta : MonoBehaviour
 
     private void Start()
     {
-        scoreText.text = TriangleMovement.Instance.score.ToString();
+        //scoreText.text = TriangleMovement.Instance.score.ToString();
     }
     void Update()
     {

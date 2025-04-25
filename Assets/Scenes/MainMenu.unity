@@ -634,6 +634,8 @@ MonoBehaviour:
   chooserPanel: {fileID: 1487296696}
   winPanel: {fileID: 0}
   gameOverPanel: {fileID: 0}
+  scoreText: {fileID: 0}
+  finalScoreText: {fileID: 0}
   timerTutorial: 0
   isTutorialOver: 0
 --- !u!4 &694273499
@@ -1682,9 +1684,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b213f970fd40143a862fe80e78e3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lvlCounter: 0
   timer: 0
   score: 0
-  lvlSpeed: 0
+  lvlSpeed: 0.25
 --- !u!4 &1512284910
 Transform:
   m_ObjectHideFlags: 0

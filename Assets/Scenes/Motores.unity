@@ -574,6 +574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelGameOver (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 447685919419951035, guid: 30eaadf5ae1fe6b47a3ce0131ccf8d4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6365592102720129197, guid: 30eaadf5ae1fe6b47a3ce0131ccf8d4b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

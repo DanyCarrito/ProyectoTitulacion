@@ -12,10 +12,12 @@ public class MovementMouse : MonoBehaviour
     public TextMeshProUGUI scoreText;
 
     public float score;
+    public bool addScore;
 
     void Start()
     {
         cam = Camera.main;
+        addScore = false;
     }
 
     void Update()
@@ -34,7 +36,7 @@ public class MovementMouse : MonoBehaviour
             if( score > 0 )
             {
                 score -= 0.01f;
-                GameManager.Instance.IncreaseScore(-0.1f);
+                //GameManager.Instance.IncreaseScore(-0.1f);
             }
             else if( score <= 0 ) 
             {
@@ -46,6 +48,12 @@ public class MovementMouse : MonoBehaviour
         {
             PanelManager.Instance.win();
         }
+
+        if(Time.timeScale == 0 && !addScore)
+        {
+            GameManager.Instance.IncreaseScore(score);
+            addScore = true;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -55,7 +63,7 @@ public class MovementMouse : MonoBehaviour
             Debug.Log("Colisionando");
             isColision = true;
             score += 0.1f;
-            GameManager.Instance.IncreaseScore(0.1f);
+            //GameManager.Instance.IncreaseScore(0.1f);
             GetComponent<SpriteRenderer>().DOColor(Color.green, .25f);
         }
     }
@@ -65,7 +73,6 @@ public class MovementMouse : MonoBehaviour
         if (collision.gameObject.CompareTag("Line"))
         {
             isColision = false;
-            Debug.Log("NOOO olisionando");
 
             Sequence s = DOTween.Sequence();
             //s.Append(Camera.main.DOShakePosition(.25f)).Append(Camera.main.transform.DOMove(new Vector3(0, 0 ,-10), .5f)) ;

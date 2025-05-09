@@ -14,6 +14,7 @@ public class Target : MonoBehaviour
     public GameObject victoryPanel;
     public VisualEffect particles;
     public SpriteRenderer spriteRenderer;
+    public AudioSource bubble;
     public Vector3 newScale = new Vector3(2.0f, 2.0f, 1.0f);
 
     private bool clickIsPressed = false;
@@ -56,15 +57,17 @@ public class Target : MonoBehaviour
 
     IEnumerator DieTarget()
     {
+        bubble.volume = 5.0f;
+        bubble.Play();
         particles.gameObject.transform.position = transform.parent.position;
         particles.SendEvent("OnPlay");
         spriteRenderer.enabled = false;
-        yield return new WaitForSeconds(3f) ;
+        yield return new WaitForSeconds(1f) ;
         gameObject.transform .parent.gameObject.SetActive(false);
         spawnTgt.SpawnObject();
 
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
 
         //particles.SendEvent("Stop");
         Destroy(transform.parent.gameObject);

@@ -97,6 +97,7 @@ public class PanelManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
         GameManager.Instance.lvlCounter = 0;
+        GameManager.Instance.score = 0;
     }
 
     public void win()

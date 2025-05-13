@@ -7,6 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class MoveRuleta : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public AudioSource daga;
     public float rotationSpeed = 50f;
 
     private void Start()
@@ -25,6 +26,8 @@ public class MoveRuleta : MonoBehaviour
             collision.transform.SetParent(transform);
             collision.gameObject.GetComponent<TriangleMovement>().isActive = false;
             collision.gameObject.GetComponent<TriangleMovement>().ConvertKinematic();
+            daga.volume = 5;
+            daga.Play();
         }
         //else ()
         //{

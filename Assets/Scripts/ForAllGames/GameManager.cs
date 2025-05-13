@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public float score = 0;
     public float lvlSpeed;
 
+    public AudioSource mouseClick;
+
     PanelManager panelManager;
 
     GameState gameState;
@@ -90,5 +92,10 @@ public class GameManager : MonoBehaviour
 
 
         Debug.Log("Score: " + score);
+    }
+
+    public void PlayMouseSound()
+    {
+        mouseClick.Play();
     }
 }

@@ -81,6 +81,7 @@ public class PanelManager : MonoBehaviour
     {
        
         SetPanelsFalse();
+        GameManager.Instance.PlayMouseSound();
         //chooserPanel.SetActive(true);
         if(GameManager.Instance.lvlCounter <= 2)
         {

@@ -320,6 +320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
       value: 
@@ -405,6 +409,10 @@ PrefabInstance:
     - target: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_Name
       value: target (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
@@ -987,6 +995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
       value: 
@@ -1508,6 +1520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
       value: 
@@ -1588,6 +1604,10 @@ PrefabInstance:
     - target: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_Name
       value: target (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
@@ -1832,6 +1852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
       value: 
@@ -1923,6 +1947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
       value: 
@@ -2008,6 +2036,10 @@ PrefabInstance:
     - target: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_Name
       value: target (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
@@ -2640,6 +2672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
       value: 
@@ -2709,6 +2745,10 @@ PrefabInstance:
     - target: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_Name
       value: target (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: scoreText
@@ -3140,6 +3180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
       value: 
@@ -3557,6 +3601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
       value: 
@@ -3614,6 +3662,7 @@ MonoBehaviour:
   timer: 0
   score: 0
   lvlSpeed: 0
+  mouseClick: {fileID: 0}
 --- !u!4 &1914729284
 Transform:
   m_ObjectHideFlags: 0
@@ -3692,6 +3741,10 @@ PrefabInstance:
     - target: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_Name
       value: target (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
@@ -3773,6 +3826,10 @@ PrefabInstance:
     - target: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_Name
       value: target (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel
@@ -3953,6 +4010,10 @@ PrefabInstance:
     - target: {fileID: 3468780308005967044, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: m_Name
       value: target
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794125760564942918, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5026645732886027275, guid: fc17b8672ada9f847b9361fdbb6316ad, type: 3}
       propertyPath: victoryPanel

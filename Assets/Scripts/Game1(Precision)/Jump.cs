@@ -7,7 +7,10 @@ using DG.Tweening;
 public class Jump : MonoBehaviour
 {
     public float jumpForce; 
-    public bool isGrounded = false; 
+    public bool isGrounded = false;
+
+    public AudioSource fallSound;
+
     private Rigidbody2D rb;
     private Animator animator;
 
@@ -33,7 +36,6 @@ public class Jump : MonoBehaviour
 
         Sequence s = DOTween.Sequence();
         s.Append(transform.DOScale(2, 1)).Append(transform.DOScale(1, 1));
-        //s.Append(transform.DORotate(Vector3.right*100,200).SetLoops(2));
         animator.SetBool("isJumping", true);
     }
 
@@ -42,6 +44,8 @@ public class Jump : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
 
+            fallSound.Play();
+            Debug.Log("sonido fall");
             isGrounded = true;
             animator.SetBool("isJumping", false);
         }

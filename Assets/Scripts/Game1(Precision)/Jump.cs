@@ -9,7 +9,7 @@ public class Jump : MonoBehaviour
     public float jumpForce; 
     public bool isGrounded = false;
 
-    public AudioSource fallSound;
+    public AudioSource jumpSound;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -31,6 +31,7 @@ public class Jump : MonoBehaviour
 
     void PlayerJump()
     {
+        jumpSound.Play();
         rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
 
@@ -44,7 +45,6 @@ public class Jump : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
 
-            fallSound.Play();
             Debug.Log("sonido fall");
             isGrounded = true;
             animator.SetBool("isJumping", false);

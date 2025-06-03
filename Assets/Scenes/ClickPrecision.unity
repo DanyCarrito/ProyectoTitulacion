@@ -890,7 +890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 7
   isGrounded: 0
-  fallSound: {fileID: 926586963}
+  jumpSound: {fileID: 926586963}
 --- !u!95 &926586962
 Animator:
   serializedVersion: 5
@@ -922,9 +922,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 43890cab34491164dad00705a631d7a3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6c5729903c4121f4ba0c1d0251ef9f80, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0

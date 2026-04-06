@@ -13,6 +13,7 @@ public class MovementMouse : MonoBehaviour
 
     public float score;
     public bool addScore;
+    public bool canStart = false;
 
     void Start()
     {
@@ -46,7 +47,7 @@ public class MovementMouse : MonoBehaviour
         }
         if( score >= 50 )
         {
-            PanelManager.Instance.win();
+            GetWinPanel();
         }
 
         if(Time.timeScale == 0 && !addScore)
@@ -56,9 +57,21 @@ public class MovementMouse : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if( collision.gameObject.CompareTag("Start"))
+        {
+            canStart = true;
+            Debug.Log("CAN START");
+        }
+        if(collision.gameObject.CompareTag("End") && canStart )
+        {
+            GetWinPanel();
+        }
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Line"))
+        if (collision.gameObject.CompareTag("Line") && canStart)
         {
             Debug.Log("Colisionando");
             isColision = true;
@@ -79,6 +92,11 @@ public class MovementMouse : MonoBehaviour
             
             GetComponent<SpriteRenderer>().DOColor(Color.red, .25f);
         }
+    }
+
+    private void GetWinPanel()
+    {
+        PanelManager.Instance.win();
     }
 
 }

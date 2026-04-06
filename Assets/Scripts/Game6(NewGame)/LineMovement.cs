@@ -12,21 +12,21 @@ public class LineMovement : MonoBehaviour
 
     void Update()
     {
-        if (PanelManager.Instance.isTutorialOver)
-        {
-            transform.Translate(direction * speed * Time.deltaTime);
-            Debug.Log("y position :" + transform.position.y);
+        //if (PanelManager.Instance.isTutorialOver)
+        //{
+        //    transform.Translate(direction * speed * Time.deltaTime);
+        //    Debug.Log("y position :" + transform.position.y);
 
-            if (transform.position.y >= upLimit.y)
-            {
-                direction = Vector2.down;
-            }
+        //    if (transform.position.y >= upLimit.y)
+        //    {
+        //        direction = Vector2.down;
+        //    }
 
-            if (transform.position.y <= downLimit.y)
-            {
-                Debug.Log("Va parribe");
-                direction = Vector2.up;
-            }
-        }
+        //    if (transform.position.y <= downLimit.y)
+        //    {
+        //        Debug.Log("Va parribe");
+        //        direction = Vector2.up;
+        //    }
+        //}
     }
 }
